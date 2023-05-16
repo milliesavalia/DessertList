@@ -14,7 +14,7 @@ class DessertViewController: UIViewController {
         }
     }
     
-    let dessertService: DessertServiceProtocol = DessertService()
+    let dessertService: DessertServiceProtocol
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: CGRect.zero, style: .grouped)
@@ -27,6 +27,7 @@ class DessertViewController: UIViewController {
     }()
     
     init() {
+        self.dessertService = DessertService()
         super.init(nibName: nil, bundle: nil)
         title = NSLocalizedString("Dessert List", comment: "title")
     }
