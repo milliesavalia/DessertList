@@ -1,7 +1,9 @@
 # DessertList
 Fetches a list of dessert recipes from API
 
+
 To run: Open xcodeproj file and run on any iPhone device.
+
 
 Networking:
 - Created DessertServiceProtocol for two network requests so that I can create a service that conforms to that protocol. Later when I want to write tests, I can create a mock networking service that comforms to the same protocol.
